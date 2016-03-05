@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="35dp"
+        android:layout_height="90dp"
+        android:text="@string/Left"
+        android:id="@+id/goLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="35dp"
+        android:layout_height="90dp"
+        android:text="@string/Right"
+        android:id="@+id/goRght"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/goUp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="@string/Up"
+        android:id="@+id/goUp"
+        android:layout_alignTop="@+id/goLeft"
+        android:layout_toEndOf="@+id/goLeft" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="@string/Down"
+        android:id="@+id/goDown"
+        android:layout_below="@+id/goUp"
+        android:layout_toStartOf="@+id/goRght" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu"
+        android:id="@+id/selectInventory"
+        android:layout_alignTop="@+id/interact"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Interact"
+        android:id="@+id/interact"
+        android:layout_alignBottom="@+id/goDown"
+        android:layout_toEndOf="@+id/goRght" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/goLeft"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

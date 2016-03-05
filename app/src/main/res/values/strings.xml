@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TheQuest</string>
+    <string name="Left">Left</string>
+    <string name="Right">Rght</string>
+    <string name="Up">Up</string>
+    <string name="Down">Down</string>
+    <string name="Menu">Menu</string>
+    <string name="Interact">Interact</string>
 </resources>
